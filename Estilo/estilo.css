@@ -1,0 +1,74 @@
+html, body {
+    height: 100%; /*dar el altura al body y al html sino no centra el display del body*/
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex; /* este display que se menciona arriba*/
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom right, #141e30, #729fd1); /*Efecto gradiente de right top a left bottom  */
+
+  }
+  
+  .datos-box {
+    color: white;
+  }
+
+  .datos-box fieldset{
+    background-color: #14457D;
+    border-style: none;
+    box-shadow: 3px 3px 3px 3px #0A223D;
+  }
+
+  .datos-box h2{
+    text-align: center;
+  }
+
+  .user-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-box label{
+    margin: 10px 0px 10px 0px;
+  }
+
+  .user-box input {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  .user-box input:focus { /*estilo de animacion*/
+    border-color: #99B013;
+    outline: none;
+  }
+  
+  .user-box select{
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  .user-box select:focus {
+    border-color: #99B013;
+    outline: none;
+  }
+
+  .user-box button {
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    --hover: #4cd83f; /* Color verde claro al posar el mouse */
+    transition: box-shadow 0.3s ease; /* Añade una transición suave */
+    
+  }
+  
+  .user-box button:hover, .user-box button:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
